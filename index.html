@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Website</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            display: flex;
+            
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 100px ;
+            text-align: center;
+          
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+           
+            background-image: url("");
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+
+
+
+            
+
+
+
+
+
+        }
+        
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: bold;
+
+        }
+        
+        nav a:hover {
+            background-color: #555;
+            border-color: #555;
+
+
+
+
+        }
+        
+        /* Section styles */
+        section {
+            background-color: #333;
+            color: #ddd;
+            margin: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            
+            background-color: rgba(0, 0, 0, 0.5);
+            
+        }
+        
+        /* Heading styles */
+        h1 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+
+        }
+        
+        /* Paragraph styles */
+        p {
+            color: #ccc;
+            font-size: 16px;
+
+
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        td{
+            padding: 10px;
+        }
+        /* Additional CSS styles */
+
+/* Header styles */
+header h1 {
+    text-transform: uppercase;
+}
+
+.theme-site-avatar-picture{
+    border-color:white;
+    border: 5px solid rgba(0,0,0,87);
+    border-radius: 50%;
+    box-shadow:0 2px 4px #00000024,0 4px 5px #0000001f,0 1px 10px #0003; 
+    box-sizing: border-box ;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+ 
+/* Navigation styles */
+
+
+/* Navigation link styles */
+
+.fixed-top {
+    position: sticky;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 10px;
+    border-bottom: 2px solid #666;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+
+    
+}
+.text-center{
+    text-align: center;
+
+}
+.table{
+    text-align: center;
+}
+
+.b-example-divider {
+        width: 100%;
+        height: 5rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        padding: 10rem; 
+        text-align: center;
+        margin: 10px;
+        border-radius: 10px;
+  }
+      
+      .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+}   
+.rounded-3
+{
+    border: radius 10px;
+
+}
+.bg-img-content{
+    
+
+    padding:5px;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: none;
+
+
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+    
+
+.faculty-plus-hero-content .intro{
+    margin: 20px;
+    min-width: 280px;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.fa-solid{
+    padding: 20px;
+    font-size: 40px;
+    color: #ccc;
+    
+
+}
+.fa-brands:hover{
+    color: #131010;
+}
+.fa-brands{
+    padding: 20px;
+    font-size: 40px;
+    color: #ccc;
+}
+.fa-solid:hover{
+    color: #131010;
+}
+
+
+/* Section styles */
+section {
+    border: 1px solid #ddd;
+}
+
+/* Course list styles */
+#courses ul li {
+    color: white;
+    background-color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    
+}
+#courses{
+    margin: 50px;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #333;
+    margin: 50px;
+    
+
+}
+#education{
+    background-color: #333;
+    margin: 50px;
+}
+
+/* Footer styles */
+footer p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+footer {
+    transition: background-color 0.5s ease; 
+    ;/* Smooth color transition */
+}
+
+
+
+
+/* Responsive design for header */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+/* Responsive design for navigation */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px 0;
+    }
+}
+
+/* Responsive design for sections */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 10px auto;
+    }
+}
+
+        /* Media query for responsive design */
+        @media screen and (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <style>
+        body {
+            background-image: url("graduation-high-school-university-concept-space-text.jpg"); 
+         
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+             /* Set background color to a darker shade of blue for better readability */
+            
+
+            
+        }
+        /* Add more CSS rules as needed */
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function greetUser() {
+            let name = prompt("What's your name?");
+            if (name !== null && name !== "") {
+                alert("Hello, " + name + "! Welcome to the teacher's website.");
+            }
+        }
+    
+        
+       
+        function search(params) {
+            var searchInput = document.getElementById('search-input');
+            var searchTerm = searchInput.value.toLowerCase();
+            var courseList = document.getElementById('courses');
+            var courses = courseList.getElementsByTagName('li');
+            for (var i = 0; i < courses.length; i++) {
+                var course = courses[i];
+                var courseName = course.textContent.toLowerCase();
+                if (courseName.includes(searchTerm)) {
+                    course.style.display = 'block';
+                } else {
+                    course.style.display = 'none';
+                }
+            }
+            
+        } 
+        
+
+    </script>
+    
+    
+</head>
+<body onload="greetUser()">
+    <nav class="fixed-top">
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="#books">Books</a>
+        
+        
+
+        
+    </nav>
+
+    
+    <header>
+    <h1>Teacher's Website</h1>
+        
+           
+            <div class="theme-site-avatar-picture" style="
+                    position:relative;
+                    display:block;
+                    margin: 0 auto;
+                   width: 20%;
+                   height: 50%;
+                    padding: 20%;
+                    
+                    
+                    background-color: #ccc;
+
+                    border-radius: 50%;
+                    overflow: hidden;
+                    ">
+                  "> 
+            <img src="top-view-academic-cap-diploma.jpg" alt="Profile Picture" style="
+                      object-fit: cover;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+
+                      right: 10px;
+                      bottom: 0;
+                      width: 100%;
+                      height: 100%;
+                    " />
+            </div>
+            <div class="button"> </div> 
+                <a href="#" aria-label="twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                
+                
+                
+
+                <a href="#" aria-label="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                
+
+                
+            
+                   
+                <a href="a.b.pandey-med@msubaroda.ac.in" aria-label="mail">
+                    <i class="fa-solid fa-envelope"></i>                
+                </a>
+                </div>
+
+                
+            
+                
+                <a href="#" aria-label="Linkdin">
+                    <i class="fa-brands fa-linkedin"></i>               
+                 </a>
+                </div>
+
+                
+            
+                
+                <a href="#" aria-label="blog">
+                    <i class="fa-solid fa-blog"></i>               
+                 </a>
+                </div>
+                
+
+                
+            </div>
+            
+    </header>
+   
+   
+    <div class='bg-img-content dark-theme'>
+        <div class='faculty-plus-hero-content'>
+            <hr class='meche-dots fat'>
+            <div class='intro'>
+                <h3 class='faculty-rank'>Professor</h3>
+                <h1 class='faculty-name'>Akash Pandey </h1>
+                <p>Professor in Mechanical Engineering</p>
+
+            <div class='interests'>
+                <hr>
+                <h3>Interests</h3>
+                <ol class='numeric'>
+                    <li class='inverted'>Mechanics of systems</li><li class='inverted'>Material </li><li class='inverted'>Mechanics of growth</li>
+                </ol>
+            </div>
+            <hr/>
+        </div>
+    </div>
+    <section>
+        <h2>Welcome</h2>
+        
+        <p >Welcome to my website! Here you can find information about my classes, assignments, and more.</p>
+    </section>
+    <section id="courses">
+        <h2> Orientation Courses</h2>
+        <ul>
+            <div>
+                <table >
+                    <tbody><tr>
+                        <th scope="col">Name</th><th scope="col">Course Type</th><th scope="col">Organising University</th><th scope="col">Organising Institute</th><th scope="col">Organising Department</th><th scope="col">Centre</th><th scope="col">Start Date</th><th scope="col">End Date</th>
+                    </tr><tr>
+                        <td>Machine Learning Research and Practices</td><td>FDP (Faculty Development Programme)</td><td>University of Mumbai</td><td>Department of Computer Science, University of Mumbai and Tilak Education Society’s SK College of Science and Commerce, Nerul</td><td>Computer Sicence</td><td>Online                                                                                                                                                                                                  </td><td>3-6-2021</td><td>8-6-2021</td>
+                    </tr><tr>
+                        <td>GujCOST Sponsored eSTTP on Transformation and Challenges in Internet of Things and its Applications in Industry Post COVID 19</td><td>STTP ( One Week)</td><td>Parul University</td><td>Parul University</td><td>Department of Mechatronics Engineering</td><td>Online                                                                                                                                                                                                  </td><td>14-12-2020</td><td>18-12-2020</td>
+                    </tr><tr>
+                        <td>Advances in Welding and Joining Technologies</td><td>Others</td><td>NPTEL</td><td>NPTEL</td><td>NPTEL</td><td>Online                                                                                                                                                                                                  </td><td>14-9-2020</td><td>7-11-2020</td>
+                    </tr><tr>
+                        <td>ICT Mode STTP on Intellectual Property Rights - Aspects for Business Startups</td><td>STTP ( One Week)</td><td>NITTTR, Chandigarh</td><td>NITTTR, Chandigarh</td><td>Entrepreneurship Development and Industrial Coordination</td><td>Center for Startup and Innovation, Office of Career Advancement for Students, The Maharaja Sayajirao University of Baroda                                                                               </td><td>10-6-2019</td><td>14-6-2019</td>
+                    </tr><tr>
+                        <td>TEQIP-III Sponsored Two Week STTP on Manufacturing Process Modeling &amp; Simulation</td><td>STTP ( Two Week )</td><td>BVM Engineering College</td><td>BVM Engineering College</td><td>Production Engineering</td><td>BVM Engineering College                                                                                                                                                                                 </td><td>4-6-2018</td><td>15-6-2018</td>
+                    </tr><tr>
+                        <td>ISTE approved and GUJCOST funded STTP on CAD/CAM/CAE</td><td>STTP ( Two Week )</td><td>The Maharaja Sayajirao University of Baroda</td><td>Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda</td><td>Mechanical </td><td>Siemens CoE for Industry Automation                                                                                                                                                                     </td><td>5-6-2017</td><td>17-6-2017</td>
+                    </tr><tr>
+                        <td>TEQUIP-II Sponsored one week STTP on Finite Element Simulations using ANSYS</td><td>STTP ( One Week)</td><td>BVM Engineering College</td><td>BVM Engineering College</td><td>Mechanical </td><td>BVM Engineering College                                                                                                                                                                                 </td><td>2-5-2016</td><td>6-5-2016</td>
+                    </tr><tr>
+                        <td>TEQUIP-II sponsored two week STTP on “Free and Open Source Software for Engineering Applications (FOSSEA) 2015”</td><td>STTP ( Two Week )</td><td>BVM Engineering College</td><td>BVM Engineering College</td><td>Computer Engineering Department</td><td>BVM Engineering College                                                                                                                                                                                 </td><td>15-6-2015</td><td>26-6-2015</td>
+                    </tr><tr>
+                        <td>Short Term Training Program on “CAD Using Unigraphics”</td><td>STTP ( One Week)</td><td>NITTTR, Bhopal</td><td>NITTTR, Bhopal</td><td>Mechanical </td><td>NITTTR, Bhopal                                                                                                                                                                                          </td><td>13-10-2014</td><td>17-10-2014</td>
+                    </tr><tr>
+                        <td>Centre for Entrepreneurship Development (CED, Government of Gujarat) organized Faculty Development Programme on “Entrepreneurship Development”</td><td>Refresher</td><td>The Maharaja Sayajirao University of Baroda</td><td>Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda</td><td>Centre for Entrepreneurship Development</td><td>The Maharaja Sayajirao University of Baroda                                                                                                                                                             </td><td>17-2-2014</td><td>3-3-2014</td>
+                    </tr><tr>
+                        <td>ISTE sponsored Short Term Training Program on “Emerging Trechnologies in Automobile Engineering”</td><td>STTP ( Two Week )</td><td>The Maharaja Sayajirao University of Baroda</td><td>Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda</td><td>Mechanical </td><td>The Maharaja Sayajirao University of Baroda                                                                                                                                                             </td><td>11-11-2013</td><td>22-11-2013</td>
+                    </tr><tr>
+                        <td>TEQUIP-II Sponsored Short Term Training Programme on “Advanced Materials, Characterization and Applications in Materials Science and Engineering”</td><td>STTP ( One Week)</td><td>SVNIT, Surat</td><td>SVNIT, Surat</td><td>Chemical</td><td>SVNIT                                                                                                                                                                                                   </td><td>2-9-2013</td><td>6-9-2013</td>
+                    </tr><tr>
+                        <td>ISTE approved Short Term Training Programme on “Software in Mechanical Engineering”</td><td>STTP ( Two Week )</td><td>Nirma University</td><td>Nirma University</td><td>Mechanical </td><td>Nirma University, Ahmedabad                                                                                                                                                                             </td><td>1-7-2013</td><td>12-7-2013</td>
+                    </tr><tr>
+                        <td>15th  Refresher Course : Emerging Trends in Engineering and Technology (MD) (Sub. Mechanical Engineering)</td><td>Refresher</td><td>Sardar Patel University</td><td>UGC Academic Staff College</td><td>UGC Academic Staff College</td><td>UGC ASC, Vallabh Vidyanagar                                                                                                                                                                             </td><td>18-2-2013</td><td>10-3-2009</td>
+                    </tr><tr>
+                        <td>Advanced Engineering Optimization Through Intelligent Techniques</td><td>STTP ( One Week)</td><td>SVNIT, Surat</td><td>SVNIT, Surat</td><td>Mechanical </td><td>SVNIT                                                                                                                                                                                                   </td><td>14-12-2009</td><td>18-12-2009</td>
+                    </tr><tr>
+                        <td>1st SERC school on Micromachining</td><td>Summer / Winter schools, Workshops, etc.</td><td>Jointly organized by Indian Institute of Technology, Bombay and Bhabha Atomic Research Centre, Mumbai</td><td>Jointly organized by Indian Institute of Technology, Bombay and Bhabha Atomic Research Centre, Mumbai</td><td>Mechanical </td><td>IIT Bombay                                                                                                                                                                                              </td><td>2-6-2008</td><td>7-6-2008</td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </ul>
+    </section>
+    <br>
+
+    <br>
+    
+    
+
+
+<section id="education">
+    &nbsp;
+    
+    <h2>Education</h2>
+    <table class="table " cellspacing="0" id="#" style="border-style:None;border-collapse:collapse;">
+        <tbody>
+            <tr>
+                
+                <th scope="col">Education</th> 
+                <th scope="col">University Name</th>
+                <th scope="col">State</th>
+                <th scope="col">Passing Year</th>
+            </tr>
+            <tr>
+                <td>PhD</td><td>Dr. Babasaheb Ambedkar Technological University</td><td>Maharashtra</td><td>9-2017</td>
+            </tr><tr>
+                <td>Post Graduate</td><td>The Maharaja Sayajirao University of Baroda</td><td>Gujarat</td><td>12-2003</td>
+            </tr><tr>
+                <td>Graduate</td><td>The Maharaja Sayajirao University of Baroda</td><td>Gujarat</td><td>5-2000</td>
+            </tr>
+        </tbody></table>
+        
+    </section>
+    <section id="H&A">
+        <h2>Honors and Awards</h2>
+        <p>honor</p>
+        <p>Awards</p>
+    </section>
+    <section id="rs">
+        <h2>Related Services</h2>
+        <div>
+            <table>
+                <tbody><tr>
+                    <th scope="col">Industry Name</th><th scope="col">Designation</th><th scope="col">Nature of Job</th><th scope="col">Start Date</th><th scope="col">End Date</th><th scope="col">Currently Working</th>
+                </tr><tr>
+                    <td>Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda</td><td>Assistant Professor</td><td>Teaching</td><td>17-9-2008</td><td>--</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_0" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl02$ctl00" checked="checked" disabled="disabled"></span></td>
+                </tr><tr>
+                    <td>Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda</td><td>Temporary Lecturer</td><td>Teaching</td><td>5-8-2005</td><td>16-9-2008</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_1" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl03$ctl00" disabled="disabled"></span></td>
+                </tr><tr>
+                    <td>Polytechnic, The Maharaja Sayajirao Unvierstiy of Baroda</td><td>Temporary Lecturer</td><td>Teaching</td><td>1-1-2005</td><td>4-8-2005</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_2" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl04$ctl00" disabled="disabled"></span></td>
+                </tr><tr>
+                    <td>Sushrut Consultants</td><td>Design Engineer</td><td>Industrial Work</td><td>10-2-2004</td><td>31-12-2004</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_3" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl05$ctl00" disabled="disabled"></span></td>
+                </tr><tr>
+                    <td>Infosys Technologies Limited</td><td>Software Developer</td><td>Industrial Work</td><td>7-5-2001</td><td>31-7-2002</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_4" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl06$ctl00" disabled="disabled"></span></td>
+                </tr><tr>
+                    <td>Infosys Technologies Limited</td><td>Software Developer</td><td>Industrial Work</td><td>4-12-2000</td><td>6-4-2001</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_5" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl07$ctl00" disabled="disabled"></span></td>
+                </tr><tr>
+                    <td>Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda</td><td>Temporary Lecturer</td><td>Teaching</td><td>27-7-2000</td><td>2-12-2000</td><td><span class="aspNetDisabled" title="Currently Working"><input id="ContentPlaceHolder1_Experience_Detail_ctl00_6" type="checkbox" name="ctl00$ContentPlaceHolder1$Experience_Detail$ctl08$ctl00" disabled="disabled"></span></td>
+                </tr>
+            </tbody></table>
+        </div>
+        
+        
+    </section>
+    <section id="pe">
+        <h2>Professional Experience</h2>
+        <p>te</p>
+    </section>
+    <section id="books">
+        <h2>Books and Publication</h2>
+        <div>
+	<table>
+		<tbody><tr>
+			<th scope="col">Book Title</th><th scope="col">Publisher Name</th><th scope="col">ISBN</th><th scope="col">Published Year</th>
+		</tr><tr>
+			<td>Evaluation of Metal Foam of Al6061 + MgO Using PM Route</td><td>Springer Nature Singapore Pte Ltd 2021</td><td>9789813344655</td><td>2021</td>
+		</tr><tr>
+			<td>Manufacturing Processes (Basic Machine Tools)</td><td>TechKnowledge Publications</td><td>9789389748635</td><td>2020</td>
+		</tr>
+	</tbody></table>
+    </div>
+
+    </section>
+    <section>
+        <h2>Talks</h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Teacher_Talks_Details" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Title</th><th scope="col">Participated as</th><th scope="col">Place</th><th scope="col">Date</th>
+                </tr><tr>
+                    <td>IPR Platforms Overview, Patent Search Methodology at Patent Clinic</td><td>Invited Speaker</td><td>Birla Vishwakarma Mahavidyalaya</td><td>6-4-2020</td>
+                </tr><tr>
+                    <td>Recent Advances in Manufacturing Techniques</td><td>Invited Speaker</td><td>Dept of Mech Engg, GEC Banswara</td><td>18-9-2019</td>
+                </tr><tr>
+                    <td>Industry 4.0 Theory and Applications</td><td>Invited Speaker</td><td>Chhotubhai Gopalbhai Patel Institute of Technology, Uka Tarsadia University, Bardoli</td><td>5-7-2019</td>
+                </tr><tr>
+                    <td>ANN and GA Model Development at Design of Experiments</td><td>Invited Speaker</td><td>Department of Production Engineering, Birla Vishwakarma Mahavidyalaya</td><td>22-6-2019</td>
+                </tr><tr>
+                    <td>Sensitivity Analysis with Hands-on Exercise at Design of Experiments</td><td>Invited Speaker</td><td>Department of Production Engineering, Birla Vishwakarma Mahavidyalaya</td><td>22-6-2019</td>
+                </tr><tr>
+                    <td>Dual Power Source Engine</td><td>Resource Member</td><td>GEC, Bharuch</td><td>11-6-2019</td>
+                </tr><tr>
+                    <td>Concept of Camless Engine</td><td>Resource Member</td><td>GEC, Bharuch</td><td>11-6-2019</td>
+                </tr><tr>
+                    <td>Neural network and fuzzy modeling for manufacturing processes</td><td>Resource Member</td><td>Production Engineering Department, BVM Engineering College, Vallabh Vidyanagar</td><td>10-6-2018</td>
+                </tr><tr>
+                    <td>Semi Empirical modeling and dimensional analysis</td><td>Resource Member</td><td>Production Engineering Department, BVM Engineering College, Vallabh Vidyanagar</td><td>9-6-2018</td>
+                </tr><tr>
+                    <td>Advances in Non-conventional Manufacturing Techniques</td><td>Key Note Address</td><td>Mechanical Engineering Department, Government Engineering College, Dahod</td><td>3-1-2018</td>
+                </tr><tr>
+                    <td>Particle Swarm Optimization</td><td>Invited Speaker</td><td>Department of Mechanical &amp; Automobile Engineering, C. G. Patel Institute of Technology, Uka Tarsadia University, Bardoli</td><td>28-3-2017</td>
+                </tr><tr>
+                    <td>Regression-Sensitivity Analysis</td><td>Invited Speaker</td><td>Birla Vishvakarma Mahavidyalay, BVM Engineering College, V. V. Nagar, Gujarat</td><td>4-6-2016</td>
+                </tr><tr>
+                    <td>Regression Analysis and Hands on Exercise</td><td>Invited Speaker</td><td>Birla Vishvakarma Mahavidyalay, BVM Engineering College, V. V. Nagar, Gujarat</td><td>3-6-2016</td>
+                </tr><tr>
+                    <td>Advanced Non-Conventional Manufacturing Techniques</td><td>Invited Speaker</td><td>Vadodara Institute of Engineering, Kotambi, Vadodara</td><td>26-5-2016</td>
+                </tr><tr>
+                    <td>Taguchi and Response Analysis</td><td>Invited Speaker</td><td>Chhotubhai Gopal Bhai Patel Institute of Technology, Uka Tarsadia University, Bardoli</td><td>30-4-2016</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </section>
+    <section>
+        <h2>Published Articles/Papers in Journal</h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Published_Journal_Detail" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Title</th><th scope="col">Journal Name</th><th scope="col">Volume No.</th><th scope="col">Page No.</th><th scope="col">ISSN</th><th scope="col">Published Year</th>
+                </tr><tr>
+                    <td>Critical review on porous material manufacturing techniques, properties &amp; their applications</td><td>Materials Today Proceedings</td><td>46</td><td>8196-8203</td><td>&nbsp;</td><td>1-2023</td>
+                </tr><tr>
+                    <td>The Use of Grey Relational Analysis to Determine Optimum Parameters for Plasma Arc Cutting of SS-316L</td><td>Advanced Engineering Optimization Through Intelligent Techniques. Advances in Intelligent Systems and Computing, Springer, Singapore</td><td>&nbsp;</td><td>183-192</td><td>&nbsp;</td><td>4-2020</td>
+                </tr><tr>
+                    <td>Development and Modification of Existing Canine Wheelchair into Cost Effective Model</td><td>Techno-Societal 2018</td><td>2</td><td>905-911</td><td>&nbsp;</td><td>4-2020</td>
+                </tr><tr>
+                    <td>Petri nets as a Tool for Modelling Manufacturing Systems : a Review</td><td>Proceedings of International Conference on “Research and Innovations in Science, Engineering &amp; Technology” ICRISET</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>11-2019</td>
+                </tr><tr>
+                    <td>Fabrication of Macro-Arrayed Structure using Reverse EDM: A Multi-objective Optimization</td><td>Procedia Manufacturing</td><td>20</td><td>160-167</td><td>23519789</td><td>7-2018</td>
+                </tr><tr>
+                    <td>Concept for Automated Sorting Robotic Arm</td><td>Procedia Manufacturing</td><td>20</td><td>400 to 405</td><td>23519789</td><td>7-2018</td>
+                </tr><tr>
+                    <td>Automatic Gear Change Mechanism for Two-Wheeler Automobiles</td><td>ICATSA Techno Societal 2016 International Conference on Advanced Technologies for Societal Applications </td><td>1</td><td>751-760</td><td>&nbsp;</td><td>7-2017</td>
+                </tr><tr>
+                    <td>Embedded Controller Based Automatic Gear Change Mechanism for Two Wheeled Manual Transmission Motorcycle</td><td>ASME 2016 International Mechanical Engineering Congress and Exposition Volume 12 Transportation Systems</td><td>12</td><td>V012T16A029</td><td>&nbsp;</td><td>7-2017</td>
+                </tr><tr>
+                    <td>A method to predict possibility of arcing in EDM of TiB2p reinforced ferrous matrix composite</td><td>The International Journal of Advanced Manufacturing Technology</td><td>86</td><td>2837–2849</td><td>14333015 </td><td>10-2016</td>
+                </tr>
+            </tbody></table>
+        </div>
+
+
+
+
+    </section>
+    <section>
+        <h2>Research</h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Teacher_Research_Details" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Title</th><th scope="col">Funding Agency</th><th scope="col">Project Nature</th><th scope="col">Duration</th><th scope="col">Status</th><th scope="col">Date</th>
+                </tr><tr>
+                    <td>Siemens Center of Excellence for Industry Automation</td><td>Government of Gujarat</td><td>Other</td><td>120</td><td>Ongoing</td><td>18-8-2015</td>
+                </tr>
+            </tbody></table>
+        </div>
+
+    </section>
+    <section>
+        <h2>Visit</h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Acad_visit_detail" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Institute/Industry Visited</th><th scope="col">Role</th><th scope="col">Duration</th><th scope="col">Sponsered By</th><th scope="col">Remarks</th><th scope="col">Date</th>
+                </tr><tr>
+                    <td>Cosmos Impex India Pvt. Ltd.</td><td>Invited Professor</td><td>2</td><td>Cosmos Impex India Pvt. Ltd.</td><td>Industrial Visit for Students</td><td>4-3-2020</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </section>
+    <section>
+        <h2>
+            E-content
+        </h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_E_Content_Detail" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Title</th><th scope="col">Brief Detail</th><th scope="col">Quadrant</th><th scope="col">E-Content Type</th><th scope="col">Publishing Authorities</th><th scope="col">Publishing Date</th>
+                </tr><tr>
+                    <td>Computational Techniques and Programming Languages</td><td>Blog Created for Dissemination of Course Material, Assignments, Term Work etc</td><td>4</td><td>Others</td><td>Blogger</td><td>5-1-2020</td>
+                </tr><tr>
+                    <td>Computer Applications in Mechanical Engineering II</td><td>Blog Created for Dissemination of Course Material, Assignments, Term Work etc</td><td>4</td><td>Others</td><td>Blogger</td><td>5-1-2020</td>
+                </tr>
+            </tbody></table>
+        </div>
+
+    </section>
+    <section>
+        <h2>
+            Participation in Academic Programme
+        </h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Teacher_Contri_Acads" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Title</th><th scope="col">Participated as</th><th scope="col">Date</th>
+                </tr><tr>
+                    <td>STTP on CAD/CAM/CAE</td><td>Co-Ordinator</td><td>5-6-2017</td>
+                </tr>
+                <tr>
+                    <td>Board of studies</td><td>Internal Expert</td><td>13-7-2017</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </section>
+    <section>
+        <h2>Participation in Committes</h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Parti_Comm_Detail" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Committee Name</th><th scope="col">Level</th><th scope="col">Participated As</th><th scope="col">Submission Date</th>
+                </tr><tr>
+                    <td>Central Committee for Union Election</td><td>University</td><td>Member</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Central Committee for Union Election</td><td>University</td><td>Member</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Committee for Participation in Vibrant Startup and Technology Summit 2019</td><td>University</td><td>Assistant Director, Center for Startup and Innovaiton</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Organizing Committee of National Workshop on Regulatory Compliance for Accelerating Innovations</td><td>University</td><td>Member</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Participation in Vibrant Gujarat Startup and Technology Summit 2018</td><td>University</td><td>Assistant Director, Center for Startup and Innovation</td><td>25-11-2019</td>
+                </tr><tr>
+                    <td>MSUSU Election - Scrutiny and Collecting</td><td>University</td><td>Member</td><td>30-7-2018</td>
+                </tr>
+            </tbody></table>
+        </div>
+       </section>
+    <section>
+
+        <h2>Extention</h2>
+        <div>
+            <table class="table table-hover gridview-header-centre" cellspacing="0" id="ContentPlaceHolder1_Parti_Comm_Detail" style="border-style:None;border-collapse:collapse;">
+                <tbody><tr>
+                    <th scope="col">Committee Name</th><th scope="col">Level</th><th scope="col">Participated As</th><th scope="col">Submission Date</th>
+                </tr><tr>
+                    <td>Central Committee for Union Election</td><td>University</td><td>Member</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Central Committee for Union Election</td><td>University</td><td>Member</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Committee for Participation in Vibrant Startup and Technology Summit 2019</td><td>University</td><td>Assistant Director, Center for Startup and Innovaiton</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Organizing Committee of National Workshop on Regulatory Compliance for Accelerating Innovations</td><td>University</td><td>Member</td><td>9-4-2020</td>
+                </tr><tr>
+                    <td>Participation in Vibrant Gujarat Startup and Technology Summit 2018</td><td>University</td><td>Assistant Director, Center for Startup and Innovation</td><td>25-11-2019</td>
+                </tr><tr>
+                    <td>MSUSU Election - Scrutiny and Collecting</td><td>University</td><td>Member</td><td>30-7-2018</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <br>
+        
+        
+            <h2>Contact</h2>
+            <p>You can reach me at:</p>
+            <p>Phone:   9426500485</p>
+            <p>Email: a.b.pandey-med@msubaroda.ac.in</p>
+            </section>
+        
+    <div class="b-example-divider"></div>
+
+<div class="container my-5">
+  <div class="p-5 text-center roudnde-3">
+    <h1 class="text-body-emphasis">The Faculty of technology and engineering
+
+    </h1>
+    <h2>
+        <li class="lead">
+            <ul>
+                <a href="#">
+
+                    contact admission
+                </a>
+            </ul>
+            <ul>
+                <a href="">
+                    site feedback
+
+                </a>
+            </ul>
+        </li>
+    </h2>
+      
+    
+  </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+    <footer>
+        <p>&copy; 2024 Teacher's Website</p>
+    </footer>
+</body>
+</html>
